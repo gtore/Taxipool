@@ -1,0 +1,41 @@
+<div class="breadcrumb-wrap">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h4>portfolio single 2</h4>
+            </div>
+            <div class="col-sm-6 hidden-xs text-right">
+                <ol class="breadcrumb">
+                    <li><a href="index.html">Portfolio</a></li>
+                    <li>portfolio single 2</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div><!--breadcrumbs-->
+
+    <div class="divide50"></div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="center-heading">
+                <h2>Related work</h2>
+                <span class="center-line"></span>
+            </div>
+        </div>
+        <% @route.each do |route| %>
+          <div class="col-sm-4">
+              <div class="work-wrap">
+                  <img src="sampleimg.jpg" class="img-responsive" alt="">
+                  <div class="img-overlay">
+                      <div class="inner-overlay">
+                          <h2><%= route.way %></h2>
+                          <p>description</p>
+                          <a class="link" href="#"><i class="fa fa-search"></i></a>
+                          <a class="zoom show-image" href="img/img-4.jpg"><i class="fa fa-image"></i></a>
+                      </div>
+                  </div><!--img-overlay-->
+              </div>
+          </div>
+        <% end %>
+    </div>
+</div>
